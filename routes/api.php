@@ -38,4 +38,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::post("logout", [LoginController::class, 'logout'])->name('logout');
 
     Route::post('/team/addUser', [TeamController::class, 'userAddedToTeam']);
+
+    Route::post('/teamRequest/update', [TeamController::class, 'teamRequest']);
+
+    Route::post('/team/leave', [TeamController::class, 'leaveTeam']);
 });
