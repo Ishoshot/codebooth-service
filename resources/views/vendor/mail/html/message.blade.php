@@ -21,6 +21,7 @@
 {{-- Footer --}}
 @slot('footer')
 @component('mail::footer')
+<p style="margin-bottom: 20px;">You recieved this because your e-mail address is registered with CodeBooth.</p>
 © {{ date('Y') }} {{ config('app.name') }}. @lang('All rights reserved.')
 @endcomponent
 @endslot
